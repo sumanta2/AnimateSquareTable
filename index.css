@@ -1,0 +1,145 @@
+.outer{
+    
+    height:25em;
+    width:33em;
+    display:grid;
+    place-items: center;
+    border:2px solid yellow;
+    position:relative;
+    /* border-radius:55px; */
+    border-end-start-radius: 55px;
+    border-end-end-radius:55px;
+    background-image: linear-gradient(45deg, yellow,red,yellow );
+}
+h5{
+    border:1px solid yellow;
+    font-size:1.3em;
+    display:inline;
+    border-radius: 4px;
+    background-color: transparent;
+    color:whitesmoke;
+    min-width: 666666px;
+}
+h5:hover{
+    box-shadow: 1px 1px 7px;
+    color:cyan;
+}
+button{
+    margin:8px;
+    width:77px;
+    height:33px;
+    color:magenta;
+    background-color: yellow;
+    border:none;
+    border-end-start-radius: 19px; 
+    border-start-end-radius:19px;
+    box-shadow: 1px 1px 7px green; 
+}
+button:hover{
+    background-color:yellowgreen;
+    box-shadow: 1px 1px 4px;
+}
+button:active{
+    background-color: transparent;
+    box-shadow: 0px 0px 0px;
+    border:1px solid yellowgreen;
+    transform:translateY(5px)
+}
+#btn4,#btn5{
+    box-shadow: 1px 1px 7px green;
+}
+
+.animate{
+    animation-name:sumanta;
+    animation-duration: 1s;
+    animation-iteration-count:1;
+    animation-timing-function: ease-out-in;
+}
+
+.revAnimate{
+    animation-name:revSumanta;
+    animation-duration: 1s;
+    animation-iteration-count:1;
+    animation-timing-function: ease-out-in;
+}
+.fixedAnimate{
+    animation-name:nxtSumanta;
+    animation-duration: 1000ms;
+    animation-iteration-count:1;
+    animation-timing-function: ease-out-in;
+}
+
+
+ @keyframes sumanta
+{
+    0%{
+        top:0px;
+        left:0px;
+        opacity:1
+    }
+     46%{
+        top:0px;
+        left:248px;
+        opacity:0;
+    }
+    53%{ 
+        top:0px;
+        left:-248px;
+         opacity:0;
+        /* height:15px; */  
+    }
+    100%{ 
+        top:0px;
+        left:0px;
+        opacity:1;  
+    }
+}
+
+
+@keyframes revSumanta
+{
+    0%{
+        top:0px;
+        left:0px;
+        opacity:1
+    }
+     46%{
+         top:0px;
+        left:-248px;
+         opacity:0;
+        /* height:15px; */
+        
+    }
+    53%{ 
+        top:0px;
+        left:248px;
+        opacity:0;
+        
+    }
+    100%{ 
+        top:0px;
+        left:0px;
+        opacity:1;
+        
+    }
+}
+
+@keyframes nxtSumanta
+{
+    0%{
+        top:0px;
+        left:0px;
+        opacity:1
+    }
+     50%{
+        top:0px;
+        left:0;
+        opacity:0.3;
+    }
+    100%{ 
+        top:0px;
+        left:0px;
+        opacity:1;
+        
+    }
+}
